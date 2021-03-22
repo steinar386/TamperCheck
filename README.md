@@ -31,3 +31,6 @@ Changing the variable SecLevel to 2 will halt the execution if a Digital Signatu
 NOTE
 The Digital Signature is verified as long as it is trusted by the robot, including self signed certificates.
 This script is designed as portable and light-weight as possible, relying as little on external applications, databases or functionality as possible.
+
+DISCLAIMER
+MD5 is not considered secure, as it is possible to manipulate the MD5 checksum in some instances - do not rely on this tool alone.
