@@ -1,5 +1,5 @@
 # TamperCheck
-Script tool for checking if files have been tampered with since deployment
+Script tool for checking if a file has been tampered with since deployment.
 
 SCENARIO
 The aim of this tool - is to attempt to verify if the files has been modified in any way after the initial upload.
@@ -22,7 +22,7 @@ The text "-<md5 hash>" (with the leading dash) is what the script uses to pick t
 VERIFICATION
 When the scheduler runs - it can initiate the automated installation with this script - verifying two things.
 
-* Any Digital Signature is verified (that it is trusted by the installer robot).
+* Any Digital Signature is verified (that it is trusted by the installer robot). (Windows OS only)
 * The md5 hash of the file is compared to the data stored in the filename.
 
 CONFIGURATION
@@ -30,4 +30,4 @@ Changing the variable SecLevel to 2 will halt the execution if a Digital Signatu
 
 NOTE
 The Digital Signature is verified as long as it is trusted by the robot, including self signed certificates.
-This script is designed as portable as possible, not relying on external applications, databases or functionality.
+This script is designed as portable and light-weight as possible, relying as little on external applications, databases or functionality as possible.
